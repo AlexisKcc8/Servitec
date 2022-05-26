@@ -543,6 +543,9 @@ header{
 }
 
 
+
+
+
 /*----------------------------*\
 	Cart
 \*----------------------------*/
@@ -834,14 +837,122 @@ header{
   color: #FFF;
   text-transform: uppercase;
 }
+/*----------------------------*\
+	02 -> SOBRE NOSOTROS
+\*----------------------------*/
+#about {
+  overflow: hidden;
+ }
+ .section-title-divider {
+   width: 350px;
+   height: 3px;
+   background: #03C4EB;
+   margin: 0 auto;
+   margin-bottom: 20px;
+ }
+ .section-title {
+   font-size: 15px;
+   color: #111;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight:500;
+ }
+ 
+ .section-description {
+   text-align: center;
+ 
+ }
+ .descripción-left,
+ .descripción-right{
+   height: 35rem;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .descripción-right{
+   flex-direction: column;
+   text-align: left;
+ }
+ 
+ .descripción-left{
+   justify-content: flex-end;
+ }
+ .descripción-left__img{
+   width: 100%;
+ }
+ 
+/*----------------------------*\
+	03 -> ULTIMAS NOVEDADES
+\*----------------------------*/
+.btn-mas-novedades{
+  width: 30%;
+  padding: 0.9375rem;
+  background-color: #03C4EB;
+  border: none;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn-mas-novedades:hover{
+  background-color: #0387eb;
+  transition: background-color .3s ease-in-out;
+}
+.btn-mas-novedades:visited {
+  color: #fff;
+}
+
+/*----------------------------*\
+  04 -> SERVICIOS
+\*----------------------------*/
+
+#servicios{
+  margin: 3.125rem 0 0 0;
+}
+.section-cards-services{
+  height: 50rem;
+  margin: 0 0 6rem 0;
+}
+.card-services{
+  border: 1px solid #03C4EB;
+  overflow: hidden;
+  border-radius:10px;
+  height: 100%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+.card-services:hover{
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  cursor:pointer;
+}
+.container-img-card{
+  width: 80%;
+  height: 16rem;
+}
+.container-img-card__img{
+  width: 100%;
+  height: 100%;
+}
+
 
 /*=========================================================
-	05 -> HOT DEAL
+  05 -> RESEÑAS
+===========================================================*/
+.container-content-card{
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*=========================================================
+	06 -> HOT DEAL
 ===========================================================*/
 
 #hot-deal.section {
-  padding: 60px 0px;
-  margin: 30px 0px;
+  padding: 13rem 0;
+  margin: 1.875rem 0px;
   background-color: #E4E7ED;
   background-image: url('../img/hotdeal.png');
   background-position: center;
@@ -898,44 +1009,6 @@ header{
   margin-top: 15px;
 }
 
-/*=========================================================
-  05 -> SERVICES
-===========================================================*/
-.section-cards-services{
-  height: 50rem;
-  margin: 0 0 6rem 0;
-}
-.card-services{
-  border: 1px solid #03C4EB;
-  overflow: hidden;
-  border-radius:10px;
-  height: 100%;
-  transform: scale(0.9);
-  transition: transform 0.3s ease-in-out;
-}
-.card-services:hover{
-  transform: scale(1);
-  transition: transform 0.3s ease-in-out;
-  cursor:pointer;
-}
-.container-img-card{
-  width: 80%;
-  height: 16rem;
-}
-.container-img-card__img{
-  width: 100%;
-  height: 100%;
-}
-
-.container-content-card{
-  height: 100%;
-  display: flex;
-
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
 /*=========================================================
 	06 -> PRODUCT
 ===========================================================*/
@@ -2283,48 +2356,6 @@ header{
     float: none;
     margin-top: 10px;
   }
-}
- /* descripcion
---------------------------------*/
-#about {
- overflow: hidden;
-}
-.section-title-divider {
-  width: 350px;
-  height: 3px;
-  background: #03C4EB;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-.section-title {
-  font-size: 15px;
-  color: #111;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight:500;
-}
-
-.section-description {
-  text-align: center;
-
-}
-.descripción-left,
-.descripción-right{
-  height: 35rem;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.descripción-right{
-  flex-direction: column;
-  text-align: left;
-}
-
-.descripción-left{
-  justify-content: flex-end;
-}
-.descripción-left__img{
-  width: 100%;
 }
 
 
