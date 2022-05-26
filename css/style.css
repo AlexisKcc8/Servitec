@@ -945,7 +945,10 @@ header{
   justify-content: space-around;
   align-items: center;
 }
-
+.imgavatar{
+  height:  1xp;
+}
+ 
 /*=========================================================
 	06 -> HOT DEAL
 ===========================================================*/
