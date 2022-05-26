@@ -27,13 +27,13 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="css/catalogo.css"/>
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-   
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 		
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
     </head>
 	<body>
 		<!-- HEADER -->
@@ -175,11 +175,6 @@
 			
 		</header>
 		<!-- /HEADER -->
-
-	 
-		 
-
-		 
  
 		<!-- /BREADCRUMB -->
 
@@ -188,155 +183,19 @@
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
-				<div class="row">
-					<!-- ASIDE -->
-					<div id="aside" class="col-md-3">
-						<!-- aside Widget -->
-						<div class="aside">
-						 
-							<div class="checkbox-filter">
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-1">
-									<label for="category-1">
-										 
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-2">
-									<label for="category-2">
-										 
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-3">
-									<label for="category-3">
-									 
-										 
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-4">
-									<label for="category-4">
-										  
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-5">
-									<label for="category-5">
-										 
-										 
-									</label>
-								</div>
-
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-6">
-									<label for="category-6">
-										 
-										 
-									</label>
-								</div>
-							</div>
-						</div>
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<div class="aside">
-							 
-							<div class="price-filter">
-								<div id="price-slider"></div>
-								<div class="input-number price-min">
-								 
-								</div>
-							</div>
-						</div>
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<div class="aside">
-							 
-							<div class="checkbox-filter">
-								<div class="input-checkbox">
-									<input type="checkbox" id="brand-1">
-									<label for="brand-1">
-										 
-									</label>
-								</div>
-								<div class="input-checkbox">
-									<input type="checkbox" id="brand-2">
-									<label for="brand-2">
-										 
-									</label>
-								</div>
-								<div class="input-checkbox">
-									<input type="checkbox" id="brand-3">
-									<label for="brand-3">
-										 
-									</label>
-								</div>
-								<div class="input-checkbox">
-									<input type="checkbox" id="brand-4">
-									<label for="brand-4">
-										 
-									</label>
-								</div>
-								<div class="input-checkbox">
-									<input type="checkbox" id="brand-5">
-									<label for="brand-5">
-										 
-									</label>
-								</div>
-								<div class="input-checkbox">
-									<input type="checkbox" id="brand-6">
-									<label for="brand-6">
-										 
-									</label>
-								</div>
-							</div>
-						</div>
-						<!-- /aside Widget -->
-
-						<!-- aside Widget -->
-						<div class="aside">
-						 
-							<div class="product-widget">
-								<div class="product-img">
-								 
-								</div>
-								<div class="product-body">
-									 
-								</div>
-							</div>
-
-						 
-
-							<div class="product-widget">
-								<div class="product-img">
-									 
-								</div>
-								<div class="product-body">
-								 
-								</div>
-							</div>
-						</div>
-						<!-- /aside Widget -->
-					</div>
-					<!-- /ASIDE -->
-
+				<div class="row container-catalogo">
 					<!-- STORE -->
-					<div id="store" class="col-md-9">
+					<div id="store" class="col-md-12">
 						<!-- store top filter -->
 						<div class="store-filter clearfix">
-							<div class="store-sort">
-								<label>
-									Sort By:
+							<div class="store-sort container-filtro">
+								<label class="container-filtro">
+									Filtrar:
 									<select class="input-select">
-										<option value="0">Popular</option>
-										<option value="1">Position</option>
+										<option value="0">Todo</option>
+										<option value="1">Accesorios</option>
+										<option value="2">Limpieza</option>
+										<option value="3">Hardware</option>
 									</select>
 								</label>
 
@@ -348,10 +207,7 @@
 									</select>
 								</label>
 							</div>
-							<ul class="store-grid">
-								<li class="active"><i class="fa fa-th"></i></li>
-								<li><a href="#"><i class="fa fa-th-list"></i></a></li>
-							</ul>
+							
 						</div>
 						<!-- /store top filter -->
 
