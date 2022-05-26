@@ -920,6 +920,7 @@ header{
 }
 .container-img-card{
   width: 80%;
+  height: 16rem;
 }
 .container-img-card__img{
   width: 100%;
@@ -2285,8 +2286,8 @@ header{
 }
  /* descripcion
 --------------------------------*/
-#about .about-container {
-  background: url(../img/Presentación1-removebg-preview.png) left top no-repeat;
+#about {
+ overflow: hidden;
 }
 .section-title-divider {
   width: 350px;
@@ -2305,8 +2306,27 @@ header{
 
 .section-description {
   text-align: center;
-  margin-bottom: 100px;
+
 }
+.descripción-left,
+.descripción-right{
+  height: 35rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.descripción-right{
+  flex-direction: column;
+  text-align: left;
+}
+
+.descripción-left{
+  justify-content: flex-end;
+}
+.descripción-left__img{
+  width: 100%;
+}
+
 
 /* --- tooltip --- */
 .tooltip {
