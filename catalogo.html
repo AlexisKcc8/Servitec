@@ -202,7 +202,7 @@
 				<!-- STORE -->
 				<div id="store" class="col-md-9 ">
 					<!-- store products -->
-					<div class="row content-products" id="container-products">
+					<div class="row content-products" id="container-products-catalogo">
 						
 					</div>
 					<!-- /store products -->
@@ -294,7 +294,7 @@
 			<!-- /bottom footer -->
 		</footer>	 
 		<!-- TEMPLATE DEL PRODUCTO A PINTAR -->
-		<template id="my-product">
+		<template id="my-product-catalogo">
 			<!-- product -->
 			<div class="card-product">
 				<div class="product">
@@ -317,14 +317,11 @@
 							<i class="fa fa-star"></i>
 						</div>
 						<div class="product-btns">
-							<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-							<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-							<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+							<button class="add-to-wishlist btn-add-favorites">💖</button>
+							<button class="add-to-cart-btn btn-add-car ">🛒</button>
 						</div>
 					</div>
-					<div class="add-to-cart">
-						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-					</div>
+					
 				</div>
 			</div>
 			
@@ -338,6 +335,7 @@
 		<script src="js/main.js"></script>
 		<script src="https://js.stripe.com/v3/"></script>
 
-		<script src="./js/mainProducts.js" type="module"></script>
+		<script src="./js/myModules/catalogo.js" type="module"></script>
+		<!-- <script src="./js/mainProducts.js" type="module"></script> -->
 	</body>
 </html>

@@ -1244,6 +1244,10 @@ header{
   opacity: 1;
   visibility: visible;
 }
+.product-img__img{
+  width: 2rem;
+  height: 10rem;
+}
 
 /*----------------------------*\
 	Widget product
