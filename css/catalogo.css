@@ -56,5 +56,9 @@ main{
 .product-img__img{
     height: 20rem;
 }
+.btn-add-car,
+.btn-add-favorites{
+    font-size:1.5em;
+}
 
 

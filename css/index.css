@@ -1,0 +1,16 @@
+#container-products-index{
+    display: flex;
+    align-items: center;
+    height: 38rem;
+}
+.card-product{
+    width: 25%;
+    height:100%;
+}
+.btn-add-car,
+.btn-add-favorites{
+    font-size:1.5em;
+}
+.product-img__img{
+    height: 25rem;
+}
