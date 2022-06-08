@@ -1,3 +1,60 @@
+body{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* header{
+    position: static;
+    top: 0;
+    left: 0;
+} */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.header-content{
+    height: 10rem;
+}
+.header-content__right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.header-logo__img{
+    width: 10rem;
+    height: 10rem;
+}
 .container-filtro{
     font-size:3rem;
 }
+main{
+    flex-grow: 1;
+}
+.container-content-main{
+    display: flex;
+    width: 100%;
+    padding: 1em;
+}
+.content-products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aside-category{
+    position:sticky;
+    top: 20rem;;
+    left: 0;
+}
+.card-product{
+    width: 33.3%;
+}
+.product-img__img{
+    height: 20rem;
+}
+
+
