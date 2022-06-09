@@ -60,5 +60,17 @@ main{
 .btn-add-favorites{
     font-size:1.5em;
 }
+.input-check__input{
+    width: 100%;
+    padding:1em;
+    background-color:rgba(0, 255, 255, 0.532);
+    transition: background-color .4s ease-in-out;
+}
+.input-check__input:hover{
+    color: rgb(61, 66, 70);
+    cursor: pointer;
+    background-color:rgb(0, 255, 255);
+    transition: background-color .4s ease-in-out;
+}
 
 
