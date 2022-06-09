@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Electro - HTML Ecommerce Template</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="./css/index.css">
+        <link type="text/css" rel="stylesheet" href="css/catalogo.css"/>
+		<link rel="stylesheet" href="./css/carrito.css">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+   
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+		<header >
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="tel:9971294008"><i class="fa fa-phone"></i> 9971294008</a></li>
+						<li><a href="mailto:lichos_99@hotmail.com"><i class="fa fa-envelope-o"></i> lichos_99@hotmail.com</a></li>
+						<li><a href="https://www.google.com.mx/maps/@20.4760975,-90.0842557,3a,75y,297.51h,94.8t/data=!3m6!1e1!3m4!1sYfAciSf_XYcCvCd_SVvMSw!2e0!7i13312!8i6656?hl=es"><i class="fa fa-map-marker"></i>Servitec</a></li>
+						<li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook
+						</a></li>
+						<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header" class="main-header">
+				<!-- container -->
+				<div class="container header-content">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-6">
+							<div class="header-logo">
+								<img class="header-logo__img" src="./img/logo-servitec.png" alt="Logo-Servitec">
+								<h1 class="header-logo__title" style="color:#f5eeee";>SERVITEC</h1>
+							</div>
+						</div>
+					
+						<div class="col-md-6 header-content__right">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div>
+									<h2>MI CARRITO</h2>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- container -->
+			</div>
+
+			<!-- barra de menu-->
+			<div id="top-header">
+				<div class="container">
+					<!-- <ul class="header-links pull-left">
+						<li class="active"><a href="./index.html">Inicio</a></li>
+						<li><a href="#novedades">Novedades</a></li>
+						<li><a href="#productos">Productos</a></li>
+						<li><a href="#pricing"">Servivios</a></li>
+						<li><a href="#footer">Contactos</a></li>
+						
+					</ul> -->
+				</div>
+			</div>
+			<!-- /MAIN HEADER -->
+			
+	</header>
+    <main class="container bg-succes" >
+        <section class="carrito" id="carrito">
+
+		</section>
+		<section class="container-total-compra">
+			<h2 class="container-total__title">
+				Total: <span class="container-total__price-total"></span>
+			</h2>
+			
+			<div class="btns-compra-catalogo">
+				<button class="btn btn-primary"><a href="./catalogo.html" class="btn-catalogo">Catalogo</a></button>
+				<button class="btn btn-primary btn-comprar">Comprar</button>
+			</div>
+		</section>
+    </main>
+    <template id="templateProducts">
+        <li class="list-group-item text-uppercase bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle">14</span>
+            <span class="lead align-middle">A list item</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <p class="lead mb-0">Precio:<span></span></p>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-success btn-sum">+</button>
+                <button class="btn btn-sm btn-danger btn-min">-</button>
+            </div>
+        </li>
+    </template>
+	<script src="https://js.stripe.com/v3/"></script>
+    <script src="./js/myModules/carrito.js" type="module"></script>
+</body>
+</html>

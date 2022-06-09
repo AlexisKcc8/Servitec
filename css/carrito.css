@@ -1,0 +1,20 @@
+body{
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrito{
+    height:45rem;
+    margin: 1em 0 1em 0;
+    overflow-y: auto;
+}
+.container-total-compra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-catalogo{
+    color: #fff;
+}
