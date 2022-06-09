@@ -4,35 +4,45 @@ const d = document;
 const $containerProducts = d.getElementById('container-products-catalogo');
 const $templateProducts = d.getElementById('my-product-catalogo').content;
 const $fragmentProduct = d.createDocumentFragment();
+const $cards = d.querySelectorAll('.card-product');
+
+
 const fechtOptions = {
     headers: {
         Authorization: `Bearer ${STRIPE_KEYS.secretKey}`
     }
 };
+d.addEventListener('DOMContentLoaded', (e)=>{
+    getData();
+})
 export const moneyFormat = (money)=> `$${money.slice(0,-2)}.${money.slice(-2)}`;
 let products, prices;
-Promise.all([
-    fetch('https://api.stripe.com/v1/products?limit=1000', fechtOptions),
-    fetch('https://api.stripe.com/v1/prices?limit=1000', fechtOptions)
-])
-.then((response) => Promise.all(response.map((res)=>res.json())))
-.then((res)=>{
-    paintProductsCatalogo(res);
-})
-.catch((error)=>{
-    console.log(error)
-    let message = error.statusText || "Error al conectarse al API de Stripe"
-    $containerProducts.innerHTML = `<p>Error ${error.status}: ${message}</p>`
-})
+const getData = ()=>{
+    Promise.all([
+        fetch('https://api.stripe.com/v1/products?limit=1000', fechtOptions),
+        fetch('https://api.stripe.com/v1/prices?limit=1000', fechtOptions)
+    ])
+    .then((response) => Promise.all(response.map((res)=>res.json())))
+    .then((res)=>{
+        paintProductsCatalogo(res);
+        
+    })
+    .catch((error)=>{
+        console.log(error)
+        let message = error.statusText || "Error al conectarse al API de Stripe"
+        $containerProducts.innerHTML = `<p>Error ${error.status}: ${message}</p>`
+    })
+}
 
 
 const paintProductsCatalogo = (res)=>{
 
     products = res[0].data;
     prices = res[1].data;
-    
+    let productData = [];
     prices.forEach((el) =>{
-        let productData = products.filter((product) => product.id === el.product);
+        productData = products.filter((product) => product.id === el.product);
+
         const $cloneTemplate = $templateProducts.cloneNode(true);
         $cloneTemplate.querySelector('.btn-add-car').setAttribute('data-priceId', el.id);
         $cloneTemplate.querySelector('.btn-add-car').setAttribute('data-nameP', productData[0].name);
@@ -44,6 +54,10 @@ const paintProductsCatalogo = (res)=>{
         $fragmentProduct.appendChild($cloneTemplate);
     })
     $containerProducts.appendChild($fragmentProduct);
+
+    $cards.forEach((el)=>{
+        console.log(el.id)
+    })
 }
 
 
@@ -54,6 +68,10 @@ d.addEventListener("click", (e)=>{
         agregarCarrito(e)
         
     }
+    if(e.target.matches('.input-check__input')){
+        console.log(e.target.textContent);
+    }
+    
 });
 
 const agregarCarrito = (e) => {
@@ -75,10 +93,14 @@ const agregarCarrito = (e) => {
             if (index === -1) {
                 carritoArray.push(objectProduct);
                 localStorage.setItem('dataProduct', JSON.stringify(carritoArray));
+                alert('añadido al carrito')
+                location.reload();
             } else {
                 // en caso contrario aumentamos su cantidad
                 carritoArray[index].quantity++;
                 localStorage.setItem('dataProduct', JSON.stringify(carritoArray));
+                alert('añadido al carrito')
+                location.reload();
             }
         }else{
             const index = newArray.findIndex((item) => item.priceId === objectProduct.priceId);
@@ -87,10 +109,14 @@ const agregarCarrito = (e) => {
             if (index === -1) {
                 newArray.push(objectProduct);
                 localStorage.setItem('dataProduct', JSON.stringify(newArray));
+                alert('añadido al carrito')
+                location.reload();
             } else {
                 // en caso contrario aumentamos su cantidad
                 newArray[index].quantity++;
                 localStorage.setItem('dataProduct', JSON.stringify(newArray));
+                alert('añadido al carrito')
+                location.reload();
             }
             console.log(newArray);
         }

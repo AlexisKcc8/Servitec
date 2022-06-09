@@ -1,14 +1,27 @@
-body{
-}
+
 main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.container-header-logo{
+    display: flex;
+    justify-content: center;
+}
+.container-title-carrito{
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+}
 .carrito{
     height:45rem;
-    margin: 1em 0 1em 0;
+    margin: 0 0 2em 0;
     overflow-y: auto;
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-total-compra{
     display: flex;
@@ -17,4 +30,25 @@ main{
 }
 .btn-catalogo{
     color: #fff;
+}
+.container-content-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-rede-sociales{
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.container-content-footer__title{
+    color: rgb(255, 253, 253);
+    font-size: 1.7em;
+    margin:.5em 0 0 0;
+}
+.container-rede-sociales__link{
+    color: rgb(255, 253, 253);
+    font-size: 1.2em;
 }
